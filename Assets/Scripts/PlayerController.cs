@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 		if (grounded)
 			doubleJumped = false;
 
-        if (!grounded)
+        if (!grounded && !onLadder)
         {
             playerAnime.Play("player_jump");
         }

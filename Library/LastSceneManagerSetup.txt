@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/SceneMoveCharacter.unity
+- path: Assets/Scene/ScenePlay.unity
   isLoaded: 1
   isActive: 1

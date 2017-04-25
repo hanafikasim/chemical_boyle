@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class LadderZone : MonoBehaviour {
 
-    private PlayerController thePlayer;
+    //private PlayerController thePlayer;
+    private BoyleController bigB;
 
 	// Use this for initialization
 	void Start () {
-        thePlayer = FindObjectOfType<PlayerController>();
+        bigB = FindObjectOfType<BoyleController>();
 	}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "DummyPlayer")
+        if(collision.name == "Dalton Boyle")
         {
-            thePlayer.onLadder = true;
+            bigB.onLadder = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.name == "DummyPlayer")
+        if (collision.name == "Dalton Boyle")
         {
-            thePlayer.onLadder = false ;
+            bigB.onLadder = false ;
         }
     }
 }
