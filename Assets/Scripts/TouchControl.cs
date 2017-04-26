@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TouchControl : MonoBehaviour {
 
@@ -10,8 +11,8 @@ public class TouchControl : MonoBehaviour {
 	void Start () {
         bigB = FindObjectOfType<BoyleController>();
     }
-	
-	public void moveLeft()
+
+    public void moveLeft()
     {
         bigB.btnLeft = true;
     }
@@ -21,12 +22,18 @@ public class TouchControl : MonoBehaviour {
         bigB.btnRight = true;
     }
 
-    public void Unpressed()
+    public void UnpressedMove()
     {
         bigB.btnRight = false;
         bigB.btnLeft = false;
+    }
+    public void UnpressedClimb()
+    {
         bigB.btnUp = false;
         bigB.btnDown = false;
+    }
+    public void UnpressedJump()
+    {
         bigB.btnJump = false;
     }
 

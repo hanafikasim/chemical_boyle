@@ -78,6 +78,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Chemical Boyle.Plugins.csproj">
+      <Project>{28F97E81-2939-B2AD-4534-665124DB0984}</Project>
+      <Name>Chemical Boyle.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\BoyleController.cs" />
     <Compile Include="Assets\Scripts\LadderZone.cs" />
     <Compile Include="Assets\Scripts\NPCController.cs" />

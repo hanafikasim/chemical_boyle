@@ -86,22 +86,33 @@ public class BoyleController : MonoBehaviour {
         {
             Move(-1);
         }
-        else if (btnRight)
+
+        if (btnRight)
         {
             Move(1);
         }
-        else if (btnJump)
+
+        if (btnJump)
         {
             Jump();
-            if(btnLeft)
-                Move(-1);
-            else if(btnRight)
-                Move(1);
         }
-        else if (!btnLeft || !btnRight )
+
+        if (!btnLeft && !btnRight )
         {
             Move(0);
         }
+
+        //if (btnLeft == true && btnJump == true)
+        //{
+        //    Move(-1);
+        //    Jump();
+        //}
+
+        //if (btnRight == true && btnJump == true)
+        //{
+        //    Move(1);
+        //    Jump();
+        //}
 
         if (onLadder)
         {
