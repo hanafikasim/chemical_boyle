@@ -78,6 +78,7 @@ public class BoyleController : MonoBehaviour {
         {
             rb2d.gravityScale = gravityStore;
         }
+
 #endif
 
 #if UNITY_ANDROID
