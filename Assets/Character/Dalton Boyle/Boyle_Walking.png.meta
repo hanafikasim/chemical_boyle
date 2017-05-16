@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 4b9734a79a42a264189486aa797399ff
+timeCreated: 1494760980
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Boyle_Walking_0
+    21300002: Boyle_Idle
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 512, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boyle_Walking_0
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 0
+        width: 510
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Boyle_Idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -166, y: -169}
+      - {x: -160, y: -104}
+      - {x: -69, y: -108}
+      - {x: -61, y: -105}
+      - {x: -61, y: -15}
+      - {x: -89, y: -7}
+      - {x: -170, y: -34}
+      - {x: -133, y: 108}
+      - {x: -138, y: 118}
+      - {x: -143, y: 204}
+      - {x: -223, y: 239}
+      - {x: -263, y: 239}
+      - {x: -269, y: 236}
+      - {x: -380, y: 175}
+      - {x: -398, y: 150}
+      - {x: -400, y: 96}
+      - {x: -426, y: 151}
+      - {x: -471, y: 199}
+      - {x: -492, y: 206}
+      - {x: -506, y: 208}
+      - {x: -510, y: 195}
+      - {x: -510, y: 175}
+      - {x: -479, y: 136}
+      - {x: -418, y: 87}
+      - {x: -455, y: 62}
+      - {x: -447, y: 35}
+      - {x: -421, y: 40}
+      - {x: -430, y: 32}
+      - {x: -437, y: 10}
+      - {x: -425, y: 4}
+      - {x: -418, y: 5}
+      - {x: -411, y: 10}
+      - {x: -407, y: -123}
+      - {x: -403, y: -163}
+      - {x: -352, y: -201}
+      - {x: -307, y: -256}
+      - {x: -194, y: -256}
+      - {x: -187, y: -234}
+      - {x: -197, y: -228}
+      - {x: -203, y: -227}
+    - - {x: 365, y: -96}
+      - {x: 448, y: -102}
+      - {x: 450, y: -101}
+      - {x: 450, y: -14}
+      - {x: 416, y: -12}
+      - {x: 343, y: -36}
+      - {x: 360, y: 30}
+      - {x: 371, y: 81}
+      - {x: 375, y: 118}
+      - {x: 361, y: 142}
+      - {x: 372, y: 205}
+      - {x: 319, y: 215}
+      - {x: 273, y: 239}
+      - {x: 255, y: 239}
+      - {x: 247, y: 236}
+      - {x: 246, y: 219}
+      - {x: 209, y: 210}
+      - {x: 127, y: 179}
+      - {x: 95, y: 103}
+      - {x: 75, y: 164}
+      - {x: 34, y: 212}
+      - {x: 6, y: 205}
+      - {x: 2, y: 197}
+      - {x: 2, y: 184}
+      - {x: 3, y: 178}
+      - {x: 35, y: 135}
+      - {x: 89, y: 85}
+      - {x: 65, y: 68}
+      - {x: 59, y: 48}
+      - {x: 68, y: 36}
+      - {x: 86, y: 42}
+      - {x: 77, y: 25}
+      - {x: 76, y: -3}
+      - {x: 109, y: -4}
+      - {x: 106, y: -165}
+      - {x: 147, y: -215}
+      - {x: 188, y: -245}
+      - {x: 196, y: -245}
+      - {x: 218, y: -232}
+      - {x: 264, y: -177}
+      - {x: 309, y: -235}
+      - {x: 326, y: -245}
+      - {x: 332, y: -245}
+      - {x: 371, y: -215}
+      - {x: 362, y: -191}
+      - {x: 342, y: -186}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

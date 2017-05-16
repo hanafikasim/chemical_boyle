@@ -14,7 +14,7 @@ public class LadderZone : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Dalton Boyle")
+        if(collision.name == "Dalton Boyle Prefab")
         {
             bigB.onLadder = true;
         }
@@ -22,7 +22,7 @@ public class LadderZone : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.name == "Dalton Boyle")
+        if (collision.name == "Dalton Boyle Prefab")
         {
             bigB.onLadder = false ;
         }

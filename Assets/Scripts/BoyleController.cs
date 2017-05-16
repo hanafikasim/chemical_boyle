@@ -31,12 +31,17 @@ public class BoyleController : MonoBehaviour {
     //Android UI button bool
     public bool btnLeft, btnRight, btnJump, btnUp, btnDown;
 
+    //Boyle's Animator
+    private Animator anim;
+
     // Use this for initialization
     void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
 
         gravityStore = rb2d.gravityScale;
+
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -52,6 +57,8 @@ public class BoyleController : MonoBehaviour {
 
         if (grounded)
             doubleJumped = false;
+
+
 
 #if UNITY_STANDALONE || UNITY_WEBPLAYER
 
@@ -132,7 +139,7 @@ public class BoyleController : MonoBehaviour {
             rb2d.gravityScale = gravityStore;
         }
 
-#endif
+#endif        
     }
 
     public void Jump()
@@ -164,6 +171,8 @@ public class BoyleController : MonoBehaviour {
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
+
+        anim.SetFloat("speed", Mathf.Abs(rb2d.velocity.x));
     }
 
     public void Climb(float climbInput)
@@ -171,5 +180,6 @@ public class BoyleController : MonoBehaviour {
         //climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
         climbVelocity = climbSpeed * climbInput;
         rb2d.velocity = new Vector2(rb2d.velocity.x, climbVelocity);
+        anim.SetFloat("speed", Mathf.Abs(rb2d.velocity.y));
     }
 }
