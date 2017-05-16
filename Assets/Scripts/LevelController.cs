@@ -66,6 +66,20 @@ public class LevelController : MonoBehaviour {
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
                 break;
+
+             case 8:
+                if (bigB.transform.position.y > nextLevelPos.position.y)
+                {
+                    SceneManager.LoadScene(nextLevelSceneID);
+                }
+                break;
+
+            case 9:
+                if (bigB.transform.position.x > nextLevelPos.position.x)
+                {
+                    SceneManager.LoadScene(nextLevelSceneID);
+                }
+                break;
         }
     }
 }
