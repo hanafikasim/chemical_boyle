@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 2263
+  controlID: 51
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 2264
+  controlID: 52
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 2265
+  controlID: 53
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,21 +367,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 746afeffe26afeffce6bfeffc6abfeffdeaffeff58b0feff42b1feffa6b3feff20b4feff0ab5feff64b6feffdcb6feffc6b7feffc0bbfeff3abcfeff24bdfeff46d2feffc0d2feffaad3feffb2d5feff2cd6feff16d7feff7ad8fefff4d8feffded9feff48dbfeffc0dbfeffaadcfeffa011ffff1a12ffff0613ffffc230ffff3c31ffff2c32ffff2a35ffff9e35ffff8e36ffff62adffffeeadffffbaaeffff04b1ffff8eb1ffff5ab2ffffdce7ffff58e8ffff24e9ffffe0fbffff00000000d82c00008a5d00002c5e0000665e000044630000b4950000
+    m_ExpandedIDs: e0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: kotakmerah
-      m_OriginalName: kotakmerah
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -100140
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -527,19 +527,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/UI/Design Game Faiq/Game Level/Level 1/Sprite Used
+    - Assets/Scene
   m_ViewMode: 1
   m_StartGridSize: 83
   m_LastFolders:
-  - Assets/UI/Design Game Faiq/Game Level/Level 1/Sprite Used
+  - Assets/Scene
   m_LastFoldersGridSize: 83
   m_LastProjectPath: D:\Unity Projects\Chemical Boyle
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 292}
-    m_SelectedIDs: fe290000
-    m_LastClickedID: 10750
-    m_ExpandedIDs: 00000000be2400009c250000e22500003c260000cc270000f42700002e280000762a0000162b00008a2b0000a42b0000cc2b0000c42d0000c62d0000ca2d0000ce2d0000d02d0000584f000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 52}
+    m_SelectedIDs: 4e2a0000
+    m_LastClickedID: 10830
+    m_ExpandedIDs: 00000000ec240000da250000202600007e260000a02700001a2800002a28000058280000942800001e2b0000ce2b00004a2c00008c2c0000962c0000242f0000262f0000282f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,7 +567,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be2400009c250000cc270000f42700002e280000762a0000162b0000a42b0000cc2b0000c42d0000c62d0000ca2d0000cc2d0000ce2d0000d02d0000504f0000584f000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000ec240000da250000202600007e260000a02700001a2800002a28000058280000942800001e2b0000ce2b00004a2c0000642c00008c2c0000962c0000242f0000262f0000282f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 3c2e0000302e0000262e0000cc34000000000000cc43000026a200001a25000020250000362500002a25000030250000383b0000be35000000280000a02b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
