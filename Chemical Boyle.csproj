@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\NPCController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\TouchControl.cs" />
+    <Compile Include="Assets\UIMenuController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Platformer Art Complete Pack\Base pack\Enemies\enemies_spritesheet.txt" />

@@ -182,4 +182,18 @@ public class BoyleController : MonoBehaviour {
         rb2d.velocity = new Vector2(rb2d.velocity.x, climbVelocity);
         anim.SetFloat("speed", Mathf.Abs(rb2d.velocity.y));
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "H")
+        {
+            other.gameObject.SetActive(false);
+            //Element.GetComponentInChildren<Canvas> ().enabled = true;
+        }
+        if (other.gameObject.name == "O")
+        {
+            other.gameObject.SetActive(false);
+            //Element.GetComponentInChildren<Canvas> ().enabled = true;
+        }
+    }
 }

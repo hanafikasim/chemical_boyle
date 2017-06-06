@@ -17,7 +17,7 @@ public class HomeController : MonoBehaviour {
     
     public void Play()
     {
-        //PlayerPrefs.SetInt("PreviousLevel", 0);
+        PlayerPrefs.SetInt("boylePos", 1);
         SceneManager.LoadScene(1);
     }
 }

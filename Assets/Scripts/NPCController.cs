@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCController : MonoBehaviour {
 
-    private Transform tikus;
+    private Transform npc;
     private BoyleController bigB;
 
     public Transform point1, point2, destination;
@@ -14,7 +14,7 @@ public class NPCController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        tikus = gameObject.GetComponent<Transform>();
+        npc = gameObject.GetComponent<Transform>();
         destination = point2;
     }
 	
@@ -23,14 +23,14 @@ public class NPCController : MonoBehaviour {
         
         step = speed * Time.deltaTime;
 
-        tikus.transform.position = Vector3.MoveTowards(tikus.transform.position, destination.position, step);
+        npc.transform.position = Vector3.MoveTowards(npc.transform.position, destination.position, step);
 
-        if (tikus.transform.position == point1.transform.position)
+        if (npc.transform.position == point1.transform.position)
         {
             destination = point2;
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
-        else if (tikus.transform.position == point2.transform.position)
+        else if (npc.transform.position == point2.transform.position)
         {
             destination = point1;
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
