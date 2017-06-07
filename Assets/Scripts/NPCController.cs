@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCController : MonoBehaviour {
 
@@ -41,7 +42,7 @@ public class NPCController : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player")
         {
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(0);   
         }
     }
 }

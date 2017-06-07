@@ -6,6 +6,11 @@ public class CameraFollow : MonoBehaviour {
 
     private Vector2 velocity;
 
+    private Transform camSpawn;
+
+    public Transform camSpawnPos;
+    public Transform camSpawnPos_2;
+
     public float smoothTimeY;
     public float smoothTimeX;
 
@@ -18,7 +23,17 @@ public class CameraFollow : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        camSpawn = gameObject.GetComponent<Transform>();
         bigB = FindObjectOfType<BoyleController>();
+        if (PlayerPrefs.GetInt("camSpawn") == 1)
+
+        {
+            camSpawn.transform.position = camSpawnPos.transform.position;
+        }
+        if (PlayerPrefs.GetInt("camSpawn") == 2)
+        {
+            camSpawn.transform.position = camSpawnPos_2.transform.position;
+        }
     }
 	
 	// Update is called once per frame

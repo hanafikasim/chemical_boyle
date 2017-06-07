@@ -84,7 +84,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BulletController.cs" />
+    <Compile Include="Assets\ElementsController.cs" />
     <Compile Include="Assets\HomeController.cs" />
+    <Compile Include="Assets\IntroController.cs" />
+    <Compile Include="Assets\LevelManager.cs" />
+    <Compile Include="Assets\LevelStatus.cs" />
+    <Compile Include="Assets\LevelsBGMController.cs" />
     <Compile Include="Assets\Scripts\BoyleController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraLevel1.cs" />

@@ -27,6 +27,7 @@ public class LevelController : MonoBehaviour {
         bigB = FindObjectOfType<BoyleController>();
         if(PlayerPrefs.GetInt("boylePos") == 1)
         {
+            PlayerPrefs.SetInt("boylePos", 1);
             bigB.transform.position = spawnBoylePos.position;
         }
         else if (PlayerPrefs.GetInt("boylePos") == 2)
@@ -47,6 +48,7 @@ public class LevelController : MonoBehaviour {
             case 1:
                 if (bigB.transform.position.y > nextLevelPos.position.y)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
                     PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
@@ -60,11 +62,13 @@ public class LevelController : MonoBehaviour {
             case 2:
                 if (bigB.transform.position.x > nextLevelPos.position.x)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
                     PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
                 if (bigB.transform.position.y < nextLevelPos_2.position.y)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 2);
                     PlayerPrefs.SetInt("boylePos", 3);
                     SceneManager.LoadScene(nextLevelSceneID_2);
                 }
@@ -73,11 +77,13 @@ public class LevelController : MonoBehaviour {
             case 3:
                 if (bigB.transform.position.y < nextLevelPos.position.y)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
                     PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
                 if (bigB.transform.position.x < nextLevelPos_2.position.x)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 2);
                     PlayerPrefs.SetInt("boylePos", 2);
                     SceneManager.LoadScene(nextLevelSceneID_2);
                 }
@@ -86,6 +92,7 @@ public class LevelController : MonoBehaviour {
             case 4:
                 if (bigB.transform.position.y < nextLevelPos.position.y)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
                     PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
@@ -96,11 +103,13 @@ public class LevelController : MonoBehaviour {
                 }
                 if (bigB.transform.position.x > nextLevelPos_3.position.x)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
                     PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID_3);
                 }
                 if (bigB.transform.position.y > nextLevelPos_4.position.y)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 2);
                     PlayerPrefs.SetInt("boylePos", 2);
                     SceneManager.LoadScene(nextLevelSceneID_4);
                 }
@@ -109,6 +118,7 @@ public class LevelController : MonoBehaviour {
             case 5:
                 if (bigB.transform.position.x > nextLevelPos.position.x)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 2);
                     PlayerPrefs.SetInt("boylePos", 2);
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
@@ -117,6 +127,7 @@ public class LevelController : MonoBehaviour {
             case 6:
                 if (bigB.transform.position.x > nextLevelPos.position.x)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
                     PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
@@ -127,6 +138,7 @@ public class LevelController : MonoBehaviour {
                 }
                 if (bigB.transform.position.y > nextLevelPos_3.position.y)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 2);
                     PlayerPrefs.SetInt("boylePos", 3);
                     SceneManager.LoadScene(nextLevelSceneID_3);
                 }
@@ -135,6 +147,7 @@ public class LevelController : MonoBehaviour {
             case 7:
                 if (bigB.transform.position.x > nextLevelPos.position.x)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 2);
                     PlayerPrefs.SetInt("boylePos", 2);
                     SceneManager.LoadScene(nextLevelSceneID);
                 }
@@ -143,14 +156,39 @@ public class LevelController : MonoBehaviour {
              case 8:
                 if (bigB.transform.position.y > nextLevelPos.position.y)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
+                    PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID);
+                }
+                if (bigB.transform.position.x < nextLevelPos_2.position.x)
+                {
+                    PlayerPrefs.SetInt("camSpawn", 2);
+                    PlayerPrefs.SetInt("boylePos", 3);
+                    SceneManager.LoadScene(nextLevelSceneID_2);
                 }
                 break;
 
             case 9:
                 if (bigB.transform.position.x > nextLevelPos.position.x)
                 {
+                    PlayerPrefs.SetInt("camSpawn", 1);
+                    PlayerPrefs.SetInt("boylePos", 1);
                     SceneManager.LoadScene(nextLevelSceneID);
+                }
+                if (bigB.transform.position.y < nextLevelPos_2.position.y)
+                {
+                    PlayerPrefs.SetInt("camSpawn", 2);
+                    PlayerPrefs.SetInt("boylePos", 2);
+                    SceneManager.LoadScene(nextLevelSceneID_2);
+                }
+                break;
+
+            case 10:
+                if (bigB.transform.position.x > nextLevelPos.position.x)
+                {
+                    Destroy(GameObject.FindGameObjectWithTag("LevelsBGM"));
+                    SceneManager.LoadScene(nextLevelSceneID);
+                    
                 }
                 break;
 
